@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int contador;
+        double nota,media,acumularnota;
+        contador = 0;
+        acumularnota = 0;
+        while (contador < 10000){
+            contador++;
+            System.out.println("digite a nota "+contador);
+            nota= sc.nextDouble();
+            acumularnota= nota+acumularnota;
+        }
+        media = acumularnota/contador;
+        System.out.println("media fina da classe é "+ media);
+        sc.close();
+
+    }
+}
